@@ -6,15 +6,15 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Etudiant e1 = new Etudiant("001", "Alice");
+        Etudiant e1 = new Etudiant("001", "aziz");
         e1.addNote(new Note("Math", 15));
         e1.addNote(new Note("Physique", 12));
 
-        Etudiant e2 = new Etudiant("002", "Bob");
+        Etudiant e2 = new Etudiant("002", "wajih");
         e2.addNote(new Note("Math", 10));
         e2.addNote(new Note("Physique", 8));
 
-        Etudiant e3 = new Etudiant("003", "Charlie");
+        Etudiant e3 = new Etudiant("003", "chaima");
         e3.addNote(new Note("Math", 17));
         e3.addNote(new Note("Physique", 18));
 
@@ -23,13 +23,13 @@ public class Main {
         etudiants.add(e2);
         etudiants.add(e3);
 
-        System.out.println("Statistiques des étudiants :");
+        System.out.println("Les note des etudiants :");
         Stats.afficherStatsEtudiants(etudiants);
 
         System.out.println("Moyenne du groupe : " + Stats.getMoyenneGroupe(etudiants));
 
-        System.out.println("Meilleur étudiant : " + Stats.getMaximumGroupe(etudiants).getNom());
-        System.out.println("Moins bon étudiant : " + Stats.getMinimumGroupe(etudiants).getNom());
+        System.out.println("Meilleur etudiant : " + Stats.getMaximumGroupe(etudiants).getNom());
+        System.out.println("Moins bon etudiant : " + Stats.getMinimumGroupe(etudiants).getNom());
 
         System.out.println("\nTri par moyenne :");
         Collections.sort(etudiants);
